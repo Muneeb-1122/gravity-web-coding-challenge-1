@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<!-- for btn -->
+<style>
+    .reserve-button {
+            background-color: #000000;
+            color: white;
+            border: none;
+            border-radius: 9999px;
+            padding: 10px 16px;
+            font-family: system-ui, -apple-system, sans-serif;
+            font-size: 12px;
+            font-weight: 500;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 8px;
+            transition: background-color 0.2s ease;
+            position: relative;
+            width: fit-content;
+        }
+
+        .reserve-button:hover {
+            background-color: #171717;
+        }
+
+        .reserve-button::before {
+            content: "Reserve a spot!";
+        }
+
+        .reserve-button::after {
+            content: "";
+            width: 20px;
+            height: 20px;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='black'%3E%3Cpath d='M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z'/%3E%3C/svg%3E");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin-left: 4px;
+            background-color: white;
+            border-radius: 50px;
+        }
+</style>
+
+<body>
+    <div id="main" class="d-flex-c">
+        <header>
+            <nav class="d-flex">
+                <div class="logo">
+                    <a href="#"  aria-label="Nourish homepage">
+                        <span class="logo-plus" aria-hidden="true">+</span>
+                        <span class="logo-text">Nourish</span>
+                </div>
+                <div id="menu-bar">
+                    <ul class="d-flex">
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Program</a></li>
+                        <li><a href="#">Reviews</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Contacts</a></li>
+                    </ul>
+                </div>
+                <div id="primary-btn">
+                    <button>Go on a trip</button>
+                </div>
+            </nav>
+        </header>
+        <div id="hero-section" class="d-flex">
+            <div id="left-hero" class="d-flex-c">
+                <div id="hero-text-container" class="d-flex-c">
+                    <h1>Adventure of your lifetime</h1>
+                    <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, velit fugit
+                        perspiciatis possimus sed ab provident vitae illo dolor maxime earum facere facere</p>
+                    <div id="hero-btns" class="d-flex">
+                        <button class="reserve-button"></button>
+                        <button>Get a consultation</button>
+                    </div>
+                </div>
+                <div id="ranks-boxes" class="d-flex">
+                    <div class="rank-box d-flex-c">
+                        <div id="top-rank-box" class="d-flex">
+                            <span>+</span>
+                        </div>
+                        <div id="bottom-rank-box" class="d-flex-c">
+                            <h1>10K+</h1>
+                            <p class="para">
+                                Happy Customers
+                            </p>
+                        </div>
+                    </div>
+                    <div class="rank-box d-flex-c">
+                        <div id="top-rank-box" class="d-flex">
+                            <span>+</span>
+                        </div>
+                        <div id="bottom-rank-box" class="d-flex-c">
+                            <h1>10K+</h1>
+                            <p class="para">
+                                Happy Customers
+                            </p>
+                        </div>
+                    </div>
+                    <div class="rank-box d-flex-c">
+                        <div id="top-rank-box" class="d-flex">
+                            <span>+</span>
+                        </div>
+                        <div id="bottom-rank-box" class="d-flex-c">
+                            <h1>10K+</h1>
+                            <p class="para">
+                                Happy Customers
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="right-hero" class="d-flex">
+                <div id="img-1-right-hero"></div>
+                <div id="img-2-right-hero"></div>
+            </div>
+        </div>
+    </div>
+    <section id="features" class="d-flex-c">
+        <div id="top-features" class="d-flex-c">
+            <div class="feature-btn d-flex">
+                <button>Features</button>
+            </div>
+            <div id="feature-text" class="d-flex-c">
+                <h1><span>Elevate <img src="" alt=""> your well being.</span>
+                    Go to the mountains!</h1>
+                <p class="para">Enhance your advance with waterfall hikes, thrilling exploration, gourmet culinary
+                    experiences, and
+                    serene mountaintop views</p>
+            </div>
+        </div>
+        <div id="features-boxes" class="d-flex">
+            <div class="feature-box d-flex-c">
+                <div class="top-img-feature-box d-flex">
+                    <img width="30%" src="./assests/features card top images/card-1.svg" alt="">
+                </div>
+                <div class="btm-feature-box">
+                    <h2>Stunning waterfall</h2>
+                    <p class="para">Hike the Dolomites to discover breathtaking hidden waterfall freedom and serenity</p>
+                </div>
+            </div>
+            <div class="feature-box d-flex-c">
+                <div class="top-img-feature-box d-flex">
+                    <img width="20%" src="./assests//features card top images/card 2 img 2 in white.svg" alt="">
+                </div>
+                <div class="btm-feature-box">
+                    <h2>Camping under the stars</h2>
+                    <p class="para">Hike the Dolomites to discover breathtaking hidden waterfall freedom and serenity</p>
+                </div>
+            </div>
+            <div class="feature-box d-flex-c">
+                <div class="top-img-feature-box d-flex">
+                    <img width="25%" src="./assests/features card top images/card 3.svg" alt="">
+                </div>
+                <div class="btm-feature-box">
+                    <h2>Scenic hiking trails</h2>
+                    <p class="para">Hike the Dolomites to discover breathtaking hidden waterfall freedom and serenity</p>
+                </div>
+                
+            </div>
+            <div class="feature-box d-flex-c">
+                <div class="top-img-feature-box d-flex">
+                    <img width="25%" src="./assests/features card top images/card 4.svg" alt="">
+                </div>
+                <div class="btm-feature-box">
+                    <h2>Cultural exploration</h2>
+                    <p class="para">Hike the Dolomites to discover breathtaking hidden waterfall freedom and serenity</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section id="program" class="d-flex">
+        <div id="left-program" class="d-flex-c">
+            <div class="btn d-flex">
+                <button>program</button>
+            </div>
+            <div id="program-text" class="d-flex-c">
+                <h1>Adventure to <span>Serapis lake</span></h1>
+                <p class="para">Discover the stunning beauty of Lake Sorapis, surrounded by towering peaks and
+                    crystal-clear waters. Immerse yourself in nature's tranquility, where adventure and serenity meet.
+                    Explore this hidden gem, rejuvenate your spirit, and create unforgettable memories.</p>
+            </div>
+            <div class="program-btn">
+                <button>Go on a trip!</button>
+            </div>
+        </div>
+        <div id="right-program">
+            <div id="program-imgs" class="d-flex">
+                <div id="program-img-left"></div>
+                <div id="program-img-right" class="d-flex-c">
+                    <div id="program-img-1-right"></div>
+                    <div id="program-img-2-right"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="reviews" class="d-flex-c">
+        <div id="top-reviews" class="d-flex-c">
+            <div class="reviews-btn d-flex">
+                <button>Reviews</button>
+            </div>
+            <div id="reviews-text" class="d-flex-c">
+                <h1><span>Elevate <img src="" alt=""> your well being.</span>
+                    Go to the mountains!</h1>
+                <p class="para">Enhance your advance with waterfall hikes, thrilling exploration, gourmet culinary experiences, and
+                    serene mountaintop views</p>
+            </div>
+        </div>
+        <div id="reviews-boxes" class="d-flex">
+            <div class="reviews-box d-flex-c">
+                <div id="date">
+                    <h3>2023 <span>.</span> September trip</h3>
+                </div>
+                <div id="comment">
+                    <p class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam deleniti laudantium
+                        cumque eaque voluptates, rerum molestiae facere? Dolore iusto eos tempora, quisquam, voluptates
+                        magnam suscipit maiores, qui nostrum harum labore.</p>
+                </div>
+                <div id="profile" class="d-flex">
+                    <div id="circle"></div>
+                    <div id="name-passion" class="d-flex-c">
+                        <h3>Muhammad Muneeb</h3>
+                        <p class="para">UI Designer</p>
+                    </div>
+                </div>
+            </div>
+            <div class="reviews-box d-flex-c">
+                <div id="date">
+                    <h3>2023 <span>.</span> September trip</h3>
+                </div>
+                <div id="comment">
+                    <p class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam deleniti laudantium
+                        cumque eaque voluptates, rerum molestiae facere? Dolore iusto eos tempora, quisquam, voluptates
+                        magnam suscipit maiores, qui nostrum harum labore.</p>
+                </div>
+                <div id="profile" class="d-flex">
+                    <div id="circle"></div>
+                    <div id="name-passion" class="d-flex-c">
+                        <h3>Muhammad Muneeb</h3>
+                        <p class="para">UI Designer</p>
+                    </div>
+                </div>
+            </div>
+            <div class="reviews-box d-flex-c">
+                <div id="date">
+                    <h3>2023 <span>.</span> September trip</h3>
+                </div>
+                <div id="comment">
+                    <p class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam deleniti laudantium
+                        cumque eaque voluptates, rerum molestiae facere? Dolore iusto eos tempora, quisquam, voluptates
+                        magnam suscipit maiores, qui nostrum harum labore.</p>
+                </div>
+                <div id="profile" class="d-flex">
+                    <div id="circle"></div>
+                    <div id="name-passion" class="d-flex-c">
+                        <h3>Muhammad Muneeb</h3>
+                        <p class="para">UI Designer</p>
+                    </div>
+                </div>
+            </div>
+            <div class="reviews-box d-flex-c">
+                <div id="date">
+                    <h3>2023 <span>.</span> September trip</h3>
+                </div>
+                <div id="comment">
+                    <p class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam deleniti laudantium
+                        cumque eaque voluptates, rerum molestiae facere? Dolore iusto eos tempora, quisquam, voluptates
+                        magnam suscipit maiores, qui nostrum harum labore.</p>
+                </div>
+                <div id="profile" class="d-flex">
+                    <div id="circle"></div>
+                    <div id="name-passion" class="d-flex-c">
+                        <h3>Muhammad Muneeb</h3>
+                        <p class="para">UI Designer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="FAQ" class="d-flex-c">
+        <div id="top-FAQ d-flex-c">
+            <div class="FAQ-btn">
+                <button>FAQ</button>
+            </div>
+            <div id="FAQ-text" class="d-flex">
+                <h1>Frequently asked <span>questions</span></h1>
+            </div>
+        </div>
+        <div id="questions" class="d-flex-c">
+            <div class="faq d-flex">
+                <div class="question d-flex">
+                    <h2>/01</h2>
+                    <h2>What is Nourish?</h2>
+                </div>
+                <div id="scroll-icon" class="d-flex">
+                    <img width="100%" src="./assests/icons/icons8-down-24.png" alt="">
+                </div>
+            </div>
+            <div class="faq d-flex">
+                <div class="question d-flex">
+                    <h2>/01</h2>
+                    <h2>What is Nourish?</h2>
+                </div>
+                <div id="scroll-icon" class="d-flex">
+                    <img width="100%" src="./assests/icons/icons8-down-24.png" alt="">
+                </div>
+            </div>
+            <div class="faq d-flex">
+                <div class="question d-flex">
+                    <h2>/01</h2>
+                    <h2>What is Nourish?</h2>
+                </div>
+                <div id="scroll-icon" class="d-flex">
+                    <img width="100%" src="./assests/icons/icons8-down-24.png" alt="">
+                </div>
+            </div>
+            <div class="faq d-flex">
+                <div class="question d-flex">
+                    <h2>/01</h2>
+                    <h2>What is Nourish?</h2>
+                </div>
+                <div id="scroll-icon" class="d-flex">
+                    <img width="100%" src="./assests/icons/icons8-down-24.png" alt="">
+                </div>
+            </div>
+            <div class="faq d-flex">
+                <div class="question d-flex">
+                    <h2>/01</h2>
+                    <h2>What is Nourish?</h2>
+                </div>
+                <div id="scroll-icon" class="d-flex">
+                    <img width="100%" src="./assests/icons/icons8-down-24.png" alt="">
+                </div>
+            </div>
+            
+
+        </div>
+    </section>
+    <section class="contact-section d-flex">
+        <div class="contact-container d-flex">
+            <div class="contact-info">
+                <div class="feature-btn d-flex">
+                    <button>Features</button>
+                </div>
+                <div class="heading-container">
+                    <h1 class="heading">Get in touch</h1>
+                    <span class="heading-plus">+</span>
+                </div>
+                <p class="description">We're here to help you embark on your next adventure! If you have questions about our trips or are ready to book, please fill our contact form or drop us an email.</p>
+                <div class="contact-details d-flex">
+                    <div class="contact-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                        </svg>
+                        Am Eicherhöh 12, 80992 München Germany
+                    </div>
+                    <div class="contact-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                        </svg>
+                        contact@nourish.ai
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form">
+                <form class="d-flex-c">
+                    <div class="form-grid">
+                        <div class="form-field" >
+                            <label for="firstname">First name</label>
+                            <input type="text" id="firstname" name="firstname" placeholder="First name">
+                        </div>
+                        <div class="form-field">
+                            <label for="lastname">Last name</label>
+                            <input type="text" id="lastname" name="lastname" placeholder="Last name">
+                        </div>
+                    </div>
+                    <div class="form-field">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Your email">
+                    </div>
+                    <div class="form-field">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Write your thoughts to us!"></textarea>
+                    </div>
+                    <button class="reserve-button"></button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section id="reserve" class="d-flex">
+        <div id="left-reserve" class="d-flex-c">
+            <h1><span>Ignore your sense of adventure</span>, dive into transformative exploration</h1>
+            <div class="left-reserve-left-bottom d-flex">
+                <p class="para">Embark on unforgettable adventure that inspire growth and explore stunning adventure</p>
+                <button class="reserve-button"></button>
+            </div>
+        </div>
+        <div id="right-reserve" class="d-flex">
+            <div id="right-reserve-img-1"></div>
+            <div id="right-reserve-img-2"></div>
+        </div>
+    </section>
+    <footer class="footer d-flex">
+        <div class="logo">
+            <a href="#"  aria-label="Nourish homepage">
+                <span class="logo-plus" aria-hidden="true">+</span>
+                <span class="logo-text">Nourish</span>
+        </div>
+        <div class="social-links" aria-label="Social media links">
+            <a href="#" class="social-link" aria-label="Facebook">
+                Facebook
+                <span class="social-icon" aria-hidden="true"></span>
+            </a>
+            <a href="#" class="social-link" aria-label="X/Twitter">
+                X/Twitter.com
+                <span class="social-icon" aria-hidden="true"></span>
+            </a>
+            <a href="#" class="social-link" aria-label="Instagram">
+                Instagram
+                <span class="social-icon" aria-hidden="true"></span>
+            </a>
+        </div>
+    </footer>        
+    <div class="divider" role="separator"></div>
+        <div class="sub-footer">
+            <span class="copyright"><p class="para">All right reserved by Muhammad Muneeb</p></span>
+            <a href="#" class="privacy-link"><p class="para">Privacy Policy</p></a>
+        </div>
+    </div>
+</body>
+
+</html>
